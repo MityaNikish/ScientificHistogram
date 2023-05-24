@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Histogram">
+      <UniqueIdentifier>{c28ed30f-5693-482a-aff0-d3683ff0178c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exception">
+      <UniqueIdentifier>{73533289-1178-48e4-a4ad-bd9e16b07aea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser">
+      <UniqueIdentifier>{e7b67da4-ced1-4a1b-969e-a92f4d9f8d3b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="histogram.cpp">
+      <Filter>Histogram</Filter>
+    </ClCompile>
+    <ClCompile Include="exception.cpp">
+      <Filter>Exception</Filter>
+    </ClCompile>
+    <ClCompile Include="parser.cpp">
+      <Filter>Parser</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="histogram.hpp">
+      <Filter>Histogram</Filter>
+    </ClInclude>
+    <ClInclude Include="exception.hpp">
+      <Filter>Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="parser.hpp">
+      <Filter>Parser</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
