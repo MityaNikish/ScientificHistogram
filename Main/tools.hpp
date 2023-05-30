@@ -79,7 +79,7 @@ inline bool operation(std::vector<Histogram>& hist_list, int number_1, int numbe
         std::cout << "\nnError! Invalid index.\n" << std::endl;
         return false;
     }
-    if (hist_list[number_1].is_equals_params(hist_list[number_2]))
+    if (hist_list[number_1].same_parameters(hist_list[number_2]))
     {
         std::cout << "\nError! Various histogram parameters.\n" << std::endl;
         return false;

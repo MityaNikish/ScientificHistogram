@@ -3,6 +3,7 @@
 #include <string>
 #include "histogram.hpp"
 #include "exception.hpp"
+#include "cmath"
 
 
 //-------------------------------------------------------------------------------------------------//
@@ -231,10 +232,17 @@ TEST(TestCase_Iterators, Test_1) {
 
 	for (auto i = histogram1.begin(); i != histogram1.end(); i++)
 	{
-		count += *i;
+		count += std::abs(*i);
 	}
 
 	EXPECT_TRUE(count == data.size());
+}
+
+TEST(TestCase_Add, Test_1) {
+	Histogram histogram1(1, 2, 2);
+	Histogram histogram2 = histogram1;
+	histogram1.add_value(5.5);
+	EXPECT_TRUE(histogram1 != histogram2);
 }
 
 //-------------------------------------------------------------------------------------------------//
